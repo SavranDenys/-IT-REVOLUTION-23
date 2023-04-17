@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Піцерія Папа Карло </title>
+<link rel="stylesheet" href="./style.css">
+<!-- <meta charset="utf-8"> -->
+</head>
+<body>
+	
+    <h1>Варіанти піци:</h1>
+	<ul>
+		<li>
+			<h2>Пепероні</h2>
+            <img src="./Папероні.jpg" alt="Пробачте за відсутність фото =)
+            зателефонуйте на наший номер і ми вам допоможемо +380284712664">
+			<p>Основа, томатний соус, сир моцарелла, салямі, пепероні</p>
+			<p>Мала: Мала: 87 грн.(30 см), Середня: 110 грн.(40 см), Велика: 154 грн.(80 см)</p>
+		</li>
+		<li>
+			<h2>Грибна</h2>
+            <img src="./Грибна.jpg" alt="Пробачте за відсутність фото =)
+            зателефонуйте на наший номер і ми вам допоможемо +380284712664"">
+            
+			<p>Основа, соус BBQ, сир моцарела, шинка, білі гриби, куряче філе, печериці, цибуля, помідори, рукола</p>
+			<p>Мала: Мала: 100 грн.(30 см), Середня: 182 грн.(40 см), Велика: 219 грн.(80 см)</p>
+		</li>
+		<li>
+			<h2>Вегетаріанська 4 Сира</h2>
+            <img src="./Веганська.jpg" alt="Пробачте за відсутність фото =)
+            зателефонуйте на наший номер і ми вам допоможемо +380284712664"">
+         
+			<p>Cоус вершковий, сир моцарела, сир дор блю, сир королівський, сир пармезан</p>
+			<p>Мала: Мала: 90 грн.(30 см), Середня: 120 грн.(40 см), Велика: 160 грн.(80 см)</p>
+		</li>
+        <li>
+            <h2>Гавайська</h2>
+            <img src="./Гавайська.jpg" alt="Пробачте за відсутність фото =)
+            зателефонуйте на наший номер і ми вам допоможемо +380284712664">
+            
+            <p>Соус вершковий, сир моцарела, куряче філе, ананас, кукурудза, маслини</p>
+            <p>Мала: 90 грн.(30 см), Середня: 120 грн.(40 см), Велика: 160 грн.(80 см)</p>
+        </li>
+	</ul>
+     
+    <label for="toppings">Додаткова начинка:</label>
+    
+    <br>
+    
+    <input type="checkbox" id="папероні" name="toppings" value="папероні">
+    <label for="папероні">Пепероні</label>
+    
+    <br>
+
+    <input type="checkbox" id="Гриби" name="toppings" value="Гриби">
+    <label for="Гриби">Гриби</label>
+    
+    <br>
+
+    <input type="checkbox" id="Цибуля" name="toppings" value="Цибуля">
+    <label for="Цибуля">Цибуля</label>
+    
+    <br>
+
+    <input type="checkbox" id="Ковбаса" name="toppings" value="Ковбаса">
+    <label for="Ковбаса">Ковбаса</label>
+    
+    <br>
+    
+    <input type="checkbox" id="Сир" name="toppings" value="Сир">
+    <label for="Сир">Ковбаса</label>
+    
+    <br>
+    
+    <input type="checkbox" id="Оливки" name="toppings" value="Оливки">
+    <label for="Оливки">Оливки</label>
+    
+    <br>
+
+    
+</form> 
+
+
+
+  <h1>Замовлення піци</h1>
+	<form action="process_order.php" method="post">
+		<label for="name">Ім'я:
+        </label>
+		<input placeholder="name" type="text" id="name" name="name" >
+        
+        <br>
+
+		<label for="phone">Телефон:
+        </label>
+        
+		<input placeholder="phone" type="tel" id="phone" name="phone">
+		<label for="address">Адреса:
+        </label>
+        <input placeholder="address" type="text" id="address" name="address">
+
+        <br>
+
+        <label for="email">Емейл:
+        </label>
+		<input placeholder="email" type="email" id="email" name="email" >
+        
+        <br>
+
+		<label for="size">Розмір:
+        </label>
+		<select placeholder="size" id="size" name="size" >
+			<option value="">Виберіть розмір</option>
+			<option value="small">Мала</option>
+			<option value="medium">Середня</option>
+			<option value="large">Велика</option>
+		</select>
+        
+        <br> <br>
+
+        <input type="submit" value="Замовити">
+    
+
+<div class="all">
+
+<input checked type="radio" name="respond" id="desktop">
+
+<article id="slider">
+    <input checked type="radio" name="slider" id="switch1">
+    <input type="radio" name="slider" id="switch2">
+    <input type="radio" name="slider" id="switch3">
+    <input type="radio" name="slider" id="switch4">
+    
+    <div id="slides">
+        <div id="overflow">
+            <div class="image">
+                <article><img src="./Веганська.jpg" alt=""></article>
+                <article><img src="./Гавайська.jpg" alt=""></article>
+                <article><img src="./Грибна.jpg" alt=""></article>
+                <article><img src="./Папероні.jpg" alt=""></article>
+            </div>
+        </div>
+    </div>
+    <div id="controls">
+        <label for="swicth1"></label>
+        <label for="switch2"></label>
+        <label for="switch3"></label>
+        <label for="switch4"></label>
+
+    </div>
+
+    <div id="active">
+        <label for="switch1"></label>
+        <label for="switch2"></label>
+        <label for="switch3"></label>
+        <label for="switch4"></label>
+
+    </div>
+
+</article>
+
+</div>
+
+
+
+
+</body>
+</html>

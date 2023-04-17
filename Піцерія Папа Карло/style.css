@@ -1,0 +1,236 @@
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 2rem 0;
+  }
+  
+  
+  ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  li {
+	border: 1px solid #ccc;
+	padding: 1rem;
+	margin: 0.5rem;
+	width: 300px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+ h2 {
+	font-size: 1.5rem;
+	margin: 0 0 1rem;
+	color: #333;
+  }
+  
+
+  img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 1rem;
+  }
+  
+
+  p {
+	margin: 0;
+	font-size: 1.1rem;
+	flex-grow: 1;
+	color: #666;
+  }
+  
+  input[type="checkbox"] {
+	margin-right: 0.5rem;
+  }
+  
+  
+  label[for="папероні"],
+  label[for="Гриби"],
+  label[for="Цибуля"],
+  label[for="Ковбаса"],
+  label[for="Сир"],
+  label[for="Оливки"] {
+	margin-right: 0.5rem;
+	color: #333;
+  }
+  
+
+  button {
+	background-color: #f44336;
+	color: #fff;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 2rem auto;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #e53935;
+  }
+  
+
+  footer {
+	background-color: #f2f2f2;
+	padding: 1rem;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+  }
+  
+ 
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	padding:  0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+	font-size: 1.1rem;
+	color: #333;
+  }
+  
+ 
+  label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1.1rem;
+	color: #333;
+  }
+  
+/* слайдер. */
+#slider{
+	position: relative;
+	text-align: center;
+	top: 10px
+}
+
+#slider{
+	margin: 0 auto;
+}
+
+#slides article{
+width: 20%;
+float: left;
+}
+
+#slides .image{
+	width: 500%;
+	line-height: 0;
+}
+
+#overflow{
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{
+	width: 100%;
+
+}
+
+#desktop:checked ~ #slider{
+max-width: 350px;
+}
+
+#switch1:checked ~ #controls label:nth-child(4)
+#switch2:checked ~ #controls label:nth-child(1)
+#switch3:checked ~ #controls label:nth-child(2)
+#switch4:checked ~ #controls label:nth-child(3){
+background:  url(./л.png) no-repeat;
+float: left;
+margin: 0 0 0  -84px;
+display: block;
+height: 68px;
+width: 68px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2)
+#switch2:checked ~ #controls label:nth-child(3)
+#switch3:checked ~ #controls label:nth-child(4)
+#switch4:checked ~ #controls label:nth-child(1){
+background: url(./п.png) no-repeat;
+float: right;
+margin: 0 -84px 0 0;
+display: block;
+height: 68px;
+width: 68px;
+}
+
+label, a{
+	cursor: pointer;
+}
+.all input{
+display: none;
+}
+
+#switch1:checked ~ #slides .image{
+	margin-left: 0%;
+}
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#controls{
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{
+	border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{
+	margin: 23% 0 0;
+	text-align: center;
+}
+
+#active label:hover{
+	background: #76c9ff; 
+	border-color: #777 !important;
+}
+
+#switch1:checked ~ #active label:nth-child(1)
+#switch2:checked ~ #active label:nth-child(2)
+#switch3:checked ~ #active label:nth-child(3)
+#switch4:checked ~ #active label:nth-child(4){
+	background: #18a3dd;
+	border-color:  #18a3dd !important;
+}
+
+#slider .image{
+	transition: all 800ms cubic-bezier(0.700, 0.000, 0.175, 1.000) ;
+}
+#controls label:hover{
+	opacity: 0.6;
+}
+
+#controls label{
+	transition: opacity 0.2s ease-out;
+}
